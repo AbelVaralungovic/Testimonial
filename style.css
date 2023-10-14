@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2%;
+    
+}
+
+.header{
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.header img{
+    border-radius: 50px;
+    border: 2px solid purple;
+}
+
+.header_text{
+    margin-left: 15px;
+    align-self: center;
+    line-height: 15px;
+    
+}
+
+#testimonial_1 {
+    background-color: #7541c8;
+    color: white;
+}
+
+#testimonial_2 {
+    background-color: #48556a;
+    color: white;
+}
+
+#testimonial_3 {
+    background-color: #ffffff;
+    color: #48556a;
+}
+
+#testimonial_4 {
+    background-color: #19212e;
+    color: white;
+}
+
+#testimonial_5 {
+    background-color: #ffffff;
+    color: #48556a;
+}
+
+.lowerOpp{
+    opacity: 70%;
+}
+
+.name{
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.tes {
+    /* border: 1px solid black; */
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.75);
+    /* display: flex;
+    flex-direction: column; */
+    margin-bottom: 25px;
+    padding: 30px;
+    font-size: 13px;
+
+
+}
+
+.tes:hover{
+    transform: scale(1.05);
+}
+
+.tes h3 {
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 576px) {
+    .container{
+        /* display: flex; */
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #first_half {
+        display: flex;
+        flex-direction: column;
+       
+        flex-basis: 70%;
+    }
+
+    #first_half_top{
+        display: flex;
+        flex-basis: 50%;
+    }
+    #first_half_bottom{
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    
+
+    #testimonial_1, #testimonial_4 {
+        flex-basis: 65%;
+    }
+    
+    #testimonial_2, #testimonial_3 {
+        flex-basis: 35%;
+    }
+
+    #testimonial_5 {
+        /* flex-basis: 100%; */
+        flex-basis: 30%;
+    }
+    
+    #first_half .tes{
+        margin-right: 25px;
+    }
+}
